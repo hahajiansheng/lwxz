@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>论文写作</title>
+<link rel="stylesheet" id="twentynineteen-style-css" href="/static/index/css/style.css?ver=1.2" type="text/css" media="all">
+
+<style type="text/css">
+    .page { text-align: left; margin: 15px 13%; font-size: 8px;}
+    .page a {display: inline-block; font-size: 16px;font-size: 12px; margin: 0 5px; border: 1px solid #ccc;padding: 5px 9px; line-height: 16px;}
+    .page span { display: inline-block; margin: 0 5px;padding: 5px 9px; border: 1px solid #ccc;line-height: 16px;}
+    .page .current {display: inline-block; padding: 5px 9px; background: #2b2b2b; color: #fff;border: 1px solid #2b2b2b; margin: 0 2px;  }
+
+    .hover-right-css{
+
+		background-color:orange;
+
+		width:100px;
+
+		height:100px;
+
+		position:fixed;/*fixed总是以body为定位时的对象，总是根据浏览器的窗口来进行元素的定位，通过"left"、 "top"、 "right"、 "bottom" 属性进行定位。*/
+
+		right:0px;/*设置与右侧的距离*/
+		top:20px;/*设置与底部的距离*/
+
+		z-index:100;/*设置显示次序，数字越大显示越靠前*/
+
+	}
+</style>
+
+</head>
+<body class="home blog wp-embed-responsive hfeed image-filters-enabled">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">跳至内容</a>
+
+		<header id="masthead" class="site-header">
+
+			<div class="site-branding-container">
+				<div class="site-branding">
+					<h1 class="site-title"><a href="/" rel="home">论文写作</a></h1>
+					<p class="site-description"></p>
+				</div><!-- .site-branding -->
+			</div><!-- .layout-wrap -->
+
+		</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+		<section id="primary" class="content-area">
+			<main id="main" class="site-main">
+				<article class="post1 post type-post status-publish format-standard hentry category-uncategorized entry">
+				{volist name="posts" id="post"}
+					<header class="entry-content" style="font-size: 15px;"><a href="/post/{$post.ID}" target="_blank">{$post.post_title}</a></header><!-- .entry-header -->
+				{/volist}
+				</article><!-- #post-${ID} -->
+
+				<div class="page">
+				  {$pageStr}  
+				</div>
+
+			</main><!-- .site-main -->
+		</section><!-- .content-area -->
+		
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer">
+			<div class="site-info">
+				<a class="site-name" href="/" rel="home">论文写作</a>,
+				<a href="/" class="imprint">都来看看</a>
+			</div><!-- .site-info -->
+			
+	</footer>
+
+	<div class="hover-right-css">
+		<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=572716469&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:572716469:53" alt="hello" title="hello"/></a>
+		<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=572716469&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:572716469:53" alt="hello" title="hello"/></a>
+		<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=572716469&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:572716469:53" alt="hello" title="hello"/></a>
+		<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=572716469&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:572716469:53" alt="hello" title="hello"/></a>
+
+	</div>
+
+</div><!-- #page -->
+
+	
+</body>
+</html>
