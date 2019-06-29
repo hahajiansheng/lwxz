@@ -94,9 +94,9 @@ class Response
         $data = $this->getContent();
 
         // Trace调试注入
-        // if (Env::get('app_trace', Config::get('app_trace'))) {
-        //     Debug::inject($this, $data);
-        // }
+        if (Env::get('app_trace', Config::get('app_trace'))) {
+            Debug::inject($this, $data);
+        }
 
         if (200 == $this->code) {
             $cache = Request::instance()->getCache();
